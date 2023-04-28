@@ -201,11 +201,6 @@ namespace teste
 
         }
 
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void label5_Click(object sender, EventArgs e)
         {
 
@@ -219,6 +214,13 @@ namespace teste
         private void lbl_op_trabalho_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            cursos_pg curso = new cursos_pg();
+            curso.Show();
+            this.Close();
         }
     }
 }

@@ -117,7 +117,7 @@ namespace teste
             this.label10.ForeColor = System.Drawing.Color.White;
             this.label10.Location = new System.Drawing.Point(168, 37);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 16);
+            this.label10.Size = new System.Drawing.Size(48, 16);
             this.label10.TabIndex = 1;
             this.label10.Text = "Home";
             // 
@@ -196,7 +196,6 @@ namespace teste
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown_1);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);

@@ -41,10 +41,11 @@ namespace teste
             {
                 registro.Read();
                 Usuario.email = Convert.ToString(registro["login_ADM"]);
-
+                
                 //usu.id_usuario = ;
                 Usuario.logado = true;
                 MessageBox.Show("Bem Vindo");
+                Hide();
                 //btn_cursos.Visible = true;
                 Usuario.id_usuario = Convert.ToInt32(registro["id_ADM"]);
                 EdicaoADM editaADM = new EdicaoADM();
@@ -66,8 +67,6 @@ namespace teste
 
         private void label10_Click(object sender, EventArgs e)
         {
-            Form1 form = new Form1();
-            form.Show();
             this.Close();
         }
 
@@ -79,6 +78,11 @@ namespace teste
         private void label10_MouseLeave(object sender, EventArgs e)
         {
             label10.Font = SuperMiniFont;
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -51,6 +51,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.painel_r = new System.Windows.Forms.FlowLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_back = new System.Windows.Forms.Button();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -61,7 +62,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(258, 44);
+            this.label12.Location = new System.Drawing.Point(252, 37);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(55, 16);
             this.label12.TabIndex = 3;
@@ -73,7 +74,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(238, 44);
+            this.label11.Location = new System.Drawing.Point(228, 37);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(12, 16);
             this.label11.TabIndex = 2;
@@ -84,7 +85,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(182, 44);
+            this.label10.Location = new System.Drawing.Point(168, 37);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 16);
             this.label10.TabIndex = 1;
@@ -99,7 +100,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 17);
+            this.label1.Location = new System.Drawing.Point(12, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 42);
             this.label1.TabIndex = 0;
@@ -326,6 +327,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.btn_back);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label1);
@@ -336,6 +338,20 @@
             this.panel1.Size = new System.Drawing.Size(1904, 74);
             this.panel1.TabIndex = 4;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // btn_back
+            // 
+            this.btn_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_back.BackgroundImage = global::teste.Properties.Resources.botao_de_retorno;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Location = new System.Drawing.Point(1846, 17);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 6;
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // cursos_pg
             // 
@@ -384,5 +400,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btn_back;
     }
 }

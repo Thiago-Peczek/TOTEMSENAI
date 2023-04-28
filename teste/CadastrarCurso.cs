@@ -14,6 +14,9 @@ namespace teste
     
     public partial class CadastrarCurso : Form
     {
+        Font SuperMiniFont = new Font("Microsoft Sans Serif", 10, FontStyle.Bold);
+        Font MiniFont = new Font("Microsoft Sans Serif", 12, FontStyle.Bold | FontStyle.Underline);
+
         int _puxa_selecao;
         conexao conF = new conexao();
         public CadastrarCurso(int puxa_selecao)
@@ -91,6 +94,47 @@ namespace teste
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+            this.Close();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+            this.Close();
+        }
+
+        private void label10_MouseEnter(object sender, EventArgs e)
+        {
+            label10.Font = MiniFont;
+        }
+
+        private void label10_MouseLeave(object sender, EventArgs e)
+        {
+            label10.Font = SuperMiniFont;
+        }
+
+        private void label12_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EdicaoADM adm = new EdicaoADM();
+            adm.ShowDialog();
+        }
+
+        private void label12_MouseEnter(object sender, EventArgs e)
+        {
+            label12.Font = MiniFont;
+        }
+
+        private void label12_MouseLeave(object sender, EventArgs e)
+        {
+            label12.Font = SuperMiniFont;
         }
     }
 }

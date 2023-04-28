@@ -19,7 +19,7 @@ namespace teste.Properties {
     // através de uma ferramenta como ResGen ou Visual Studio.
     // Para adicionar ou remover um associado, edite o arquivo .ResX e execute ResGen novamente
     // com a opção /str, ou recrie o projeto do VS.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -66,6 +66,16 @@ namespace teste.Properties {
         internal static System.Drawing.Bitmap _84d2a5a7_02e7_497b_bae3_04e4a9af7352 {
             get {
                 object obj = ResourceManager.GetObject("84d2a5a7-02e7-497b-bae3-04e4a9af7352", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap botao_de_retorno {
+            get {
+                object obj = ResourceManager.GetObject("botao-de-retorno", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

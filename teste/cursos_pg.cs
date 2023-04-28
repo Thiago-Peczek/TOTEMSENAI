@@ -369,6 +369,13 @@ namespace teste
         {
             busca();
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            Form1 form = new Form1();
+            form.Show();
+            this.Close();
+        }
     }
 }
 

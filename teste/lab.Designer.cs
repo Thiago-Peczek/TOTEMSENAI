@@ -35,12 +35,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
             this.pnLaboratorios = new System.Windows.Forms.FlowLayoutPanel();
+            this.btn_back = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.btn_back);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
@@ -48,7 +50,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1064, 76);
+            this.panel1.Size = new System.Drawing.Size(1904, 76);
             this.panel1.TabIndex = 3;
             // 
             // label12
@@ -56,7 +58,7 @@
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(249, 38);
+            this.label12.Location = new System.Drawing.Point(249, 37);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(95, 16);
             this.label12.TabIndex = 3;
@@ -68,7 +70,7 @@
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.Color.White;
-            this.label11.Location = new System.Drawing.Point(226, 38);
+            this.label11.Location = new System.Drawing.Point(226, 37);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(12, 16);
             this.label11.TabIndex = 2;
@@ -79,7 +81,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(167, 38);
+            this.label10.Location = new System.Drawing.Point(167, 37);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 16);
             this.label10.TabIndex = 1;
@@ -110,15 +112,29 @@
             this.pnLaboratorios.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnLaboratorios.Location = new System.Drawing.Point(0, 76);
             this.pnLaboratorios.Name = "pnLaboratorios";
-            this.pnLaboratorios.Size = new System.Drawing.Size(1064, 605);
+            this.pnLaboratorios.Size = new System.Drawing.Size(1904, 965);
             this.pnLaboratorios.TabIndex = 4;
             this.pnLaboratorios.Paint += new System.Windows.Forms.PaintEventHandler(this.pnLaboratorios_Paint_1);
+            // 
+            // btn_back
+            // 
+            this.btn_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_back.BackgroundImage = global::teste.Properties.Resources.botao_de_retorno;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Location = new System.Drawing.Point(1843, 18);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 5;
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // lab
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1064, 681);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.pnLaboratorios);
             this.Controls.Add(this.panel1);
             this.Name = "lab";
@@ -139,5 +155,6 @@
         private System.Windows.Forms.Label label1;
         private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
         private System.Windows.Forms.FlowLayoutPanel pnLaboratorios;
+        private System.Windows.Forms.Button btn_back;
     }
 }

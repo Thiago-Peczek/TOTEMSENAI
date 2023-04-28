@@ -89,17 +89,17 @@ namespace teste
 
     
 
-        private void Form1_KeyDown(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F12 && e.Control && e.Shift)
-            {
-                //Hide();
-                LoginADM tela_login_ADM = new LoginADM();
-                tela_login_ADM.ShowDialog();
-                Show();
-            }
+        //private void Form1_KeyDown(object sender, KeyEventArgs e)
+        //{
+        //    if (e.KeyCode == Keys.F12 && e.Control && e.Shift)
+        //    {
+        //        //Hide();
+        //        LoginADM tela_login_ADM = new LoginADM();
+        //        tela_login_ADM.ShowDialog();
+        //        Show();
+        //    }
            
-        }
+        //}
 
         private void Form1_Load(object sender, EventArgs e)
         {
@@ -135,16 +135,8 @@ namespace teste
             //Hide();
             LoginADM tela_login_ADM = new LoginADM();
             tela_login_ADM.ShowDialog();
-            Show();
         }
 
-        private void Form1_KeyDown_1(object sender, KeyEventArgs e)
-        {
-            //Hide();
-            LoginADM tela_login_ADM = new LoginADM();
-            tela_login_ADM.ShowDialog();
-            Show();
-        }
 
         
     }

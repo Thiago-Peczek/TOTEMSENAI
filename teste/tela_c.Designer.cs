@@ -42,9 +42,7 @@
             this.lbl_nome = new System.Windows.Forms.Label();
             this.lbl_modalidade = new System.Windows.Forms.Label();
             this.panelArred1 = new teste.PanelArred();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.pic_QR = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panelArred3 = new teste.PanelArred();
@@ -59,19 +57,23 @@
             this.label3 = new System.Windows.Forms.Label();
             this.lbl_aprender = new System.Windows.Forms.Label();
             this.lbl_op_trabalho = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pic_QR = new System.Windows.Forms.PictureBox();
+            this.btn_back = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelArred4.SuspendLayout();
             this.panelArred1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_QR)).BeginInit();
             this.panelArred3.SuspendLayout();
             this.panelArredondado3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_QR)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.btn_back);
             this.panel1.Controls.Add(this.lbl_NomeMenu);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label12);
@@ -138,7 +140,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(166, 37);
+            this.label10.Location = new System.Drawing.Point(168, 37);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(48, 16);
             this.label10.TabIndex = 1;
@@ -237,16 +239,6 @@
             this.panelArred1.Size = new System.Drawing.Size(423, 678);
             this.panelArred1.TabIndex = 16;
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::teste.Properties.Resources.imagem_Whatsapp_removebg_preview;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(76, 506);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(72, 70);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -257,16 +249,6 @@
             this.label8.Size = new System.Drawing.Size(261, 23);
             this.label8.TabIndex = 18;
             this.label8.Text = "Entre em contato conosco:";
-            // 
-            // pic_QR
-            // 
-            this.pic_QR.Location = new System.Drawing.Point(69, 159);
-            this.pic_QR.Name = "pic_QR";
-            this.pic_QR.Size = new System.Drawing.Size(285, 285);
-            this.pic_QR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pic_QR.TabIndex = 19;
-            this.pic_QR.TabStop = false;
-            this.pic_QR.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label7
             // 
@@ -440,6 +422,40 @@
             this.lbl_op_trabalho.Text = "oportunidade de trabalho";
             this.lbl_op_trabalho.Click += new System.EventHandler(this.lbl_op_trabalho_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::teste.Properties.Resources.imagem_Whatsapp_removebg_preview;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(76, 506);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(72, 70);
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pic_QR
+            // 
+            this.pic_QR.Location = new System.Drawing.Point(69, 159);
+            this.pic_QR.Name = "pic_QR";
+            this.pic_QR.Size = new System.Drawing.Size(285, 285);
+            this.pic_QR.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pic_QR.TabIndex = 19;
+            this.pic_QR.TabStop = false;
+            this.pic_QR.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // btn_back
+            // 
+            this.btn_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_back.BackgroundImage = global::teste.Properties.Resources.botao_de_retorno;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Location = new System.Drawing.Point(1844, 17);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 7;
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // tela_c
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -461,12 +477,12 @@
             this.panelArred4.PerformLayout();
             this.panelArred1.ResumeLayout(false);
             this.panelArred1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pic_QR)).EndInit();
             this.panelArred3.ResumeLayout(false);
             this.panelArred3.PerformLayout();
             this.panelArredondado3.ResumeLayout(false);
             this.panelArredondado3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pic_QR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -505,5 +521,6 @@
         private PanelArred panelArred4;
         private System.Windows.Forms.PictureBox pic_QR;
         private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
+        private System.Windows.Forms.Button btn_back;
     }
 }

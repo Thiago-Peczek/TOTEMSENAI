@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btn_Deslogar = new System.Windows.Forms.Button();
             this.btn_AlterarUS = new System.Windows.Forms.Button();
             this.btn_Excluir = new System.Windows.Forms.Button();
             this.btn_Editar = new System.Windows.Forms.Button();
@@ -42,6 +40,11 @@
             this.preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.carga_horaria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button3 = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.btn_back = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -50,62 +53,40 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
+            this.panel1.Controls.Add(this.btn_back);
+            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label11);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(884, 63);
+            this.panel1.Size = new System.Drawing.Size(1904, 74);
             this.panel1.TabIndex = 5;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial", 26.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(12, 12);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 40);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "SENAI";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel2.Controls.Add(this.btn_Deslogar);
             this.panel2.Controls.Add(this.btn_AlterarUS);
             this.panel2.Controls.Add(this.btn_Excluir);
             this.panel2.Controls.Add(this.btn_Editar);
             this.panel2.Controls.Add(this.btn_Cadastrar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 63);
+            this.panel2.Location = new System.Drawing.Point(0, 74);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 498);
+            this.panel2.Size = new System.Drawing.Size(241, 967);
             this.panel2.TabIndex = 6;
-            // 
-            // btn_Deslogar
-            // 
-            this.btn_Deslogar.FlatAppearance.BorderSize = 0;
-            this.btn_Deslogar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Deslogar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
-            this.btn_Deslogar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_Deslogar.Location = new System.Drawing.Point(19, 411);
-            this.btn_Deslogar.Name = "btn_Deslogar";
-            this.btn_Deslogar.Size = new System.Drawing.Size(140, 66);
-            this.btn_Deslogar.TabIndex = 4;
-            this.btn_Deslogar.Text = "Deslogar";
-            this.btn_Deslogar.UseVisualStyleBackColor = true;
-            this.btn_Deslogar.Click += new System.EventHandler(this.btn_Deslogar_Click);
             // 
             // btn_AlterarUS
             // 
             this.btn_AlterarUS.FlatAppearance.BorderSize = 0;
             this.btn_AlterarUS.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_AlterarUS.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.btn_AlterarUS.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_AlterarUS.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_AlterarUS.Location = new System.Drawing.Point(19, 315);
+            this.btn_AlterarUS.Location = new System.Drawing.Point(45, 636);
             this.btn_AlterarUS.Name = "btn_AlterarUS";
-            this.btn_AlterarUS.Size = new System.Drawing.Size(140, 66);
+            this.btn_AlterarUS.Size = new System.Drawing.Size(141, 136);
             this.btn_AlterarUS.TabIndex = 3;
             this.btn_AlterarUS.Text = "Alterar Usuario/Senha";
             this.btn_AlterarUS.UseVisualStyleBackColor = true;
@@ -115,11 +96,11 @@
             // 
             this.btn_Excluir.FlatAppearance.BorderSize = 0;
             this.btn_Excluir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Excluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.btn_Excluir.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Excluir.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_Excluir.Location = new System.Drawing.Point(19, 219);
+            this.btn_Excluir.Location = new System.Drawing.Point(45, 489);
             this.btn_Excluir.Name = "btn_Excluir";
-            this.btn_Excluir.Size = new System.Drawing.Size(140, 66);
+            this.btn_Excluir.Size = new System.Drawing.Size(151, 115);
             this.btn_Excluir.TabIndex = 2;
             this.btn_Excluir.Text = "Excluir Curso";
             this.btn_Excluir.UseVisualStyleBackColor = true;
@@ -129,11 +110,11 @@
             // 
             this.btn_Editar.FlatAppearance.BorderSize = 0;
             this.btn_Editar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Editar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.btn_Editar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Editar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_Editar.Location = new System.Drawing.Point(19, 123);
+            this.btn_Editar.Location = new System.Drawing.Point(45, 342);
             this.btn_Editar.Name = "btn_Editar";
-            this.btn_Editar.Size = new System.Drawing.Size(140, 66);
+            this.btn_Editar.Size = new System.Drawing.Size(151, 115);
             this.btn_Editar.TabIndex = 1;
             this.btn_Editar.Text = "Editar Cursos";
             this.btn_Editar.UseVisualStyleBackColor = true;
@@ -143,11 +124,11 @@
             // 
             this.btn_Cadastrar.FlatAppearance.BorderSize = 0;
             this.btn_Cadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Cadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 18.25F);
+            this.btn_Cadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Cadastrar.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_Cadastrar.Location = new System.Drawing.Point(19, 27);
+            this.btn_Cadastrar.Location = new System.Drawing.Point(45, 195);
             this.btn_Cadastrar.Name = "btn_Cadastrar";
-            this.btn_Cadastrar.Size = new System.Drawing.Size(140, 66);
+            this.btn_Cadastrar.Size = new System.Drawing.Size(151, 115);
             this.btn_Cadastrar.TabIndex = 0;
             this.btn_Cadastrar.Text = "Cadastrar Cursos";
             this.btn_Cadastrar.UseVisualStyleBackColor = true;
@@ -162,9 +143,9 @@
             this.preco,
             this.carga_horaria});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dataGridView1.Location = new System.Drawing.Point(200, 63);
+            this.dataGridView1.Location = new System.Drawing.Point(241, 74);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(684, 498);
+            this.dataGridView1.Size = new System.Drawing.Size(1663, 967);
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -208,11 +189,75 @@
             this.button3.Text = "Excluir Curso";
             this.button3.UseVisualStyleBackColor = true;
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(254, 37);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(103, 16);
+            this.label12.TabIndex = 3;
+            this.label12.Text = "Administrador";
+            this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(229, 37);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(12, 16);
+            this.label11.TabIndex = 2;
+            this.label11.Text = "/";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(12, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(132, 42);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "SENAI";
+            this.label1.Click += new System.EventHandler(this.label1_Click_1);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(168, 37);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(48, 16);
+            this.label10.TabIndex = 1;
+            this.label10.Text = "Home";
+            this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label10.Click += new System.EventHandler(this.label10_Click);
+            this.label10.MouseEnter += new System.EventHandler(this.label10_MouseEnter);
+            this.label10.MouseLeave += new System.EventHandler(this.label10_MouseLeave);
+            // 
+            // btn_back
+            // 
+            this.btn_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_back.BackgroundImage = global::teste.Properties.Resources.botao_de_retorno;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Location = new System.Drawing.Point(1847, 17);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 8;
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // EdicaoADM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(884, 561);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button3);
@@ -232,9 +277,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btn_Deslogar;
         private System.Windows.Forms.Button btn_AlterarUS;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button btn_Excluir;
@@ -245,5 +288,10 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nome_curso;
         private System.Windows.Forms.DataGridViewTextBoxColumn preco;
         private System.Windows.Forms.DataGridViewTextBoxColumn carga_horaria;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Button btn_back;
     }
 }

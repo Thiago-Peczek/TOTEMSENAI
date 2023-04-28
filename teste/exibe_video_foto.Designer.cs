@@ -36,13 +36,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.lbl_nomelab = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btn_close = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.panelArred1 = new teste.PanelArred();
             this.btn_proximo = new System.Windows.Forms.Button();
             this.btn_voltar = new System.Windows.Forms.Button();
             this.player = new AxWMPLib.AxWindowsMediaPlayer();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_back = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panelArred1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.player)).BeginInit();
@@ -128,7 +128,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.RoyalBlue;
-            this.panel1.Controls.Add(this.btn_close);
+            this.panel1.Controls.Add(this.btn_back);
             this.panel1.Controls.Add(this.lbl_lab);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label2);
@@ -140,19 +140,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1904, 75);
             this.panel1.TabIndex = 7;
-            // 
-            // btn_close
-            // 
-            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_close.BackgroundImage")));
-            this.btn_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_close.FlatAppearance.BorderSize = 0;
-            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_close.Location = new System.Drawing.Point(1872, 12);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(20, 20);
-            this.btn_close.TabIndex = 2;
-            this.btn_close.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -224,6 +211,20 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // btn_back
+            // 
+            this.btn_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_back.BackgroundImage = global::teste.Properties.Resources.botao_de_retorno;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Location = new System.Drawing.Point(1842, 17);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 9;
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // exibe_video_foto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -259,7 +260,7 @@
         private System.Windows.Forms.Button btn_proximo;
         private System.Windows.Forms.Label lbl_nomelab;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btn_close;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button btn_back;
     }
 }

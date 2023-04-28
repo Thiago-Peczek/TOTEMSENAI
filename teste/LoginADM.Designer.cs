@@ -40,6 +40,7 @@
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panelArred1 = new teste.PanelArred();
+            this.btn_back = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelArred1.SuspendLayout();
@@ -113,6 +114,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.btn_back);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label11);
@@ -186,6 +188,20 @@
             this.panelArred1.Size = new System.Drawing.Size(350, 241);
             this.panelArred1.TabIndex = 6;
             // 
+            // btn_back
+            // 
+            this.btn_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_back.BackgroundImage = global::teste.Properties.Resources.botao_de_retorno;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Location = new System.Drawing.Point(419, 17);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 4;
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            // 
             // LoginADM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -221,5 +237,6 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btn_back;
     }
 }

@@ -161,5 +161,12 @@ namespace teste
         {
             label10.Font = SuperMiniFont;
         }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            lab labo = new lab();
+            labo.Show();
+            this.Close();
+        }
     }
 }

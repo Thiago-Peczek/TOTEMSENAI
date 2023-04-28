@@ -14,6 +14,9 @@ namespace teste
 {
     public partial class EdicaoADM : Form
     {
+        Font SuperMiniFont = new Font("Microsoft Sans Serif", 10, FontStyle.Bold);
+        Font MiniFont = new Font("Microsoft Sans Serif", 12, FontStyle.Bold | FontStyle.Underline);
+
         conexao con = new conexao();
         public EdicaoADM()
         {
@@ -26,6 +29,7 @@ namespace teste
 
         private void btn_Cadastrar_Click(object sender, EventArgs e)
         {
+            this.Hide();
             CadastrarCurso cadastrocurso = new CadastrarCurso(0);
             cadastrocurso.ShowDialog();
 
@@ -38,7 +42,7 @@ namespace teste
             if (index >= 0)
             {
                 CadastrarCurso cadastrocurso = new CadastrarCurso(Convert.ToInt32(dataGridView1.Rows[index].Cells[0].Value));
-               
+                this.Hide();
                 cadastrocurso.ShowDialog();
             }
             
@@ -108,6 +112,31 @@ namespace teste
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label10_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void label10_MouseEnter(object sender, EventArgs e)
+        {
+            label10.Font = MiniFont;
+        }
+
+        private void label10_MouseLeave(object sender, EventArgs e)
+        {
+            label10.Font = SuperMiniFont;
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

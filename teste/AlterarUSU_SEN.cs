@@ -39,6 +39,7 @@ namespace teste
                 comandoADM.Parameters.AddWithValue("@senha_ADM", box_senhaN.Text);
                 comandoADM.ExecuteNonQuery();
                 MessageBox.Show("Usuario e senha alterados com sucesso!", "AVISO", MessageBoxButtons.OK);
+                this.Close();
 
             }
         }
@@ -46,6 +47,11 @@ namespace teste
         private void AlterarUSU_SEN_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btn_back_Click(object sender, EventArgs e)
+        {
+            this.Close
         }
     }
 }

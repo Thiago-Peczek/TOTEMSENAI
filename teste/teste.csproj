@@ -290,6 +290,7 @@
     <None Include="Resources\proximo1.png" />
     <None Include="Resources\lucas.jpg" />
     <None Include="Resources\84d2a5a7-02e7-497b-bae3-04e4a9af7352.jpg" />
+    <None Include="Resources\botao-de-retorno.png" />
     <Content Include="Videos\Laboratorio 002\NM.mp4">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
