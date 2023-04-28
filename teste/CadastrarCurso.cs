@@ -27,6 +27,15 @@ namespace teste
 
         private void CadastrarCurso_Load(object sender, EventArgs e)
         {
+            if (_puxa_selecao!=0)
+            {
+                lbl_cadastrar.Text = "Atualizar Curso";
+
+            }
+            else
+            {
+                lbl_cadastrar.Text = "Cadastrar Curso";
+            }
             MySqlConnection ConBD = conF.getconexao();// chama a conexão mysql
             ConBD.Open();//abre conexao
             Funcoes funcao = new Funcoes(ConBD);
@@ -135,6 +144,11 @@ namespace teste
         private void label12_MouseLeave(object sender, EventArgs e)
         {
             label12.Font = SuperMiniFont;
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

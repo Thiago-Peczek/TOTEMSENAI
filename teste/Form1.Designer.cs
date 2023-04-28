@@ -36,10 +36,11 @@ namespace teste
             this.panel4 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btn_close = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.btn_close = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panelArred2 = new teste.PanelArred();
             this.panelArred1 = new teste.PanelArred();
             this.panel2.SuspendLayout();
@@ -51,12 +52,14 @@ namespace teste
             // 
             this.panel2.BackColor = System.Drawing.Color.RoyalBlue;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.panelArred1);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(269, 223);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(504, 678);
             this.panel2.TabIndex = 2;
+            this.panel2.PreviewKeyDown += new System.Windows.Forms.PreviewKeyDownEventHandler(this.panel2_PreviewKeyDown);
             // 
             // label2
             // 
@@ -110,6 +113,20 @@ namespace teste
             this.panel1.Size = new System.Drawing.Size(1904, 75);
             this.panel1.TabIndex = 4;
             // 
+            // btn_close
+            // 
+            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_close.BackgroundImage")));
+            this.btn_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_close.FlatAppearance.BorderSize = 0;
+            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_close.Location = new System.Drawing.Point(1872, 12);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(20, 20);
+            this.btn_close.TabIndex = 2;
+            this.btn_close.UseVisualStyleBackColor = true;
+            this.btn_close.Click += new System.EventHandler(this.button1_Click);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
@@ -144,19 +161,14 @@ namespace teste
             this.label4.Text = "Home";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // btn_close
+            // textBox1
             // 
-            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_close.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btn_close.BackgroundImage")));
-            this.btn_close.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_close.FlatAppearance.BorderSize = 0;
-            this.btn_close.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_close.Location = new System.Drawing.Point(1872, 12);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(20, 20);
-            this.btn_close.TabIndex = 2;
-            this.btn_close.UseVisualStyleBackColor = true;
-            this.btn_close.Click += new System.EventHandler(this.button1_Click);
+            this.textBox1.Location = new System.Drawing.Point(173, 47);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 6;
+            this.textBox1.Visible = false;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // panelArred2
             // 
@@ -196,6 +208,8 @@ namespace teste
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Form1_KeyDown);
+            this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDoubleClick);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -219,6 +233,7 @@ namespace teste
         private Label label4;
         private PanelArred panelArred1;
         private PanelArred panelArred2;
+        private TextBox textBox1;
     }
 }
 

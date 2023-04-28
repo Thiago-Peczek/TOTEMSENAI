@@ -28,61 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbl_login = new System.Windows.Forms.Label();
-            this.lbl_senha = new System.Windows.Forms.Label();
-            this.box_login = new System.Windows.Forms.TextBox();
-            this.box_senha = new System.Windows.Forms.TextBox();
             this.btn_entrar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_back = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.panelArred1 = new teste.PanelArred();
-            this.btn_back = new System.Windows.Forms.Button();
+            this.lbl_senha = new System.Windows.Forms.Label();
+            this.box_senha = new System.Windows.Forms.TextBox();
+            this.lbl_login = new System.Windows.Forms.Label();
+            this.box_login = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panelArred1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // lbl_login
-            // 
-            this.lbl_login.AutoSize = true;
-            this.lbl_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_login.ForeColor = System.Drawing.Color.White;
-            this.lbl_login.Location = new System.Drawing.Point(66, 65);
-            this.lbl_login.Name = "lbl_login";
-            this.lbl_login.Size = new System.Drawing.Size(53, 20);
-            this.lbl_login.TabIndex = 0;
-            this.lbl_login.Text = "Login";
-            // 
-            // lbl_senha
-            // 
-            this.lbl_senha.AutoSize = true;
-            this.lbl_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_senha.ForeColor = System.Drawing.Color.White;
-            this.lbl_senha.Location = new System.Drawing.Point(66, 151);
-            this.lbl_senha.Name = "lbl_senha";
-            this.lbl_senha.Size = new System.Drawing.Size(61, 20);
-            this.lbl_senha.TabIndex = 1;
-            this.lbl_senha.Text = "Senha";
-            // 
-            // box_login
-            // 
-            this.box_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_login.Location = new System.Drawing.Point(151, 62);
-            this.box_login.Name = "box_login";
-            this.box_login.Size = new System.Drawing.Size(133, 26);
-            this.box_login.TabIndex = 2;
-            // 
-            // box_senha
-            // 
-            this.box_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.box_senha.Location = new System.Drawing.Point(151, 148);
-            this.box_senha.Name = "box_senha";
-            this.box_senha.Size = new System.Drawing.Size(133, 26);
-            this.box_senha.TabIndex = 3;
             // 
             // btn_entrar
             // 
@@ -124,6 +86,20 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(478, 76);
             this.panel2.TabIndex = 10;
+            // 
+            // btn_back
+            // 
+            this.btn_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_back.BackgroundImage = global::teste.Properties.Resources.botao_de_retorno;
+            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_back.FlatAppearance.BorderSize = 0;
+            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_back.Location = new System.Drawing.Point(419, 17);
+            this.btn_back.Name = "btn_back";
+            this.btn_back.Size = new System.Drawing.Size(40, 40);
+            this.btn_back.TabIndex = 4;
+            this.btn_back.UseVisualStyleBackColor = true;
+            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // label1
             // 
@@ -183,24 +159,48 @@
             this.panelArred1.Controls.Add(this.lbl_login);
             this.panelArred1.Controls.Add(this.box_login);
             this.panelArred1.ForeColor = System.Drawing.Color.Black;
-            this.panelArred1.Location = new System.Drawing.Point(64, 107);
+            this.panelArred1.Location = new System.Drawing.Point(64, 120);
             this.panelArred1.Name = "panelArred1";
             this.panelArred1.Size = new System.Drawing.Size(350, 241);
             this.panelArred1.TabIndex = 6;
             // 
-            // btn_back
+            // lbl_senha
             // 
-            this.btn_back.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_back.BackgroundImage = global::teste.Properties.Resources.botao_de_retorno;
-            this.btn_back.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_back.FlatAppearance.BorderSize = 0;
-            this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_back.Location = new System.Drawing.Point(419, 17);
-            this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(40, 40);
-            this.btn_back.TabIndex = 4;
-            this.btn_back.UseVisualStyleBackColor = true;
-            this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
+            this.lbl_senha.AutoSize = true;
+            this.lbl_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_senha.ForeColor = System.Drawing.Color.White;
+            this.lbl_senha.Location = new System.Drawing.Point(66, 151);
+            this.lbl_senha.Name = "lbl_senha";
+            this.lbl_senha.Size = new System.Drawing.Size(61, 20);
+            this.lbl_senha.TabIndex = 1;
+            this.lbl_senha.Text = "Senha";
+            // 
+            // box_senha
+            // 
+            this.box_senha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.box_senha.Location = new System.Drawing.Point(151, 148);
+            this.box_senha.Name = "box_senha";
+            this.box_senha.Size = new System.Drawing.Size(133, 26);
+            this.box_senha.TabIndex = 3;
+            // 
+            // lbl_login
+            // 
+            this.lbl_login.AutoSize = true;
+            this.lbl_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_login.ForeColor = System.Drawing.Color.White;
+            this.lbl_login.Location = new System.Drawing.Point(66, 65);
+            this.lbl_login.Name = "lbl_login";
+            this.lbl_login.Size = new System.Drawing.Size(53, 20);
+            this.lbl_login.TabIndex = 0;
+            this.lbl_login.Text = "Login";
+            // 
+            // box_login
+            // 
+            this.box_login.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.box_login.Location = new System.Drawing.Point(151, 62);
+            this.box_login.Name = "box_login";
+            this.box_login.Size = new System.Drawing.Size(133, 26);
+            this.box_login.TabIndex = 2;
             // 
             // LoginADM
             // 

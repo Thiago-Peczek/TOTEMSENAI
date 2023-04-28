@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_AlterarUS = new System.Windows.Forms.Button();
@@ -35,16 +40,16 @@
             this.btn_Editar = new System.Windows.Forms.Button();
             this.btn_Cadastrar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.id_curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome_curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.carga_horaria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button3 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.btn_back = new System.Windows.Forms.Button();
+            this.id_curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome_curso = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.carga_horaria = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -136,6 +141,16 @@
             // 
             // dataGridView1
             // 
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_curso,
@@ -148,33 +163,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(1663, 967);
             this.dataGridView1.TabIndex = 7;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // id_curso
-            // 
-            this.id_curso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.id_curso.DataPropertyName = "id_curso";
-            this.id_curso.HeaderText = "id_curso";
-            this.id_curso.Name = "id_curso";
-            this.id_curso.Width = 72;
-            // 
-            // nome_curso
-            // 
-            this.nome_curso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.nome_curso.DataPropertyName = "nome_curso";
-            this.nome_curso.HeaderText = "nome do curso";
-            this.nome_curso.Name = "nome_curso";
-            // 
-            // preco
-            // 
-            this.preco.DataPropertyName = "preco";
-            this.preco.HeaderText = "preco";
-            this.preco.Name = "preco";
-            // 
-            // carga_horaria
-            // 
-            this.carga_horaria.DataPropertyName = "carga_horaria";
-            this.carga_horaria.HeaderText = "Carga Horaria";
-            this.carga_horaria.Name = "carga_horaria";
             // 
             // button3
             // 
@@ -253,6 +241,39 @@
             this.btn_back.UseVisualStyleBackColor = true;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
+            // id_curso
+            // 
+            this.id_curso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
+            this.id_curso.DataPropertyName = "id_curso";
+            this.id_curso.HeaderText = "id_curso";
+            this.id_curso.Name = "id_curso";
+            this.id_curso.Width = 94;
+            // 
+            // nome_curso
+            // 
+            this.nome_curso.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nome_curso.DataPropertyName = "nome_curso";
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nome_curso.DefaultCellStyle = dataGridViewCellStyle3;
+            this.nome_curso.HeaderText = "nome do curso";
+            this.nome_curso.Name = "nome_curso";
+            // 
+            // preco
+            // 
+            this.preco.DataPropertyName = "preco";
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.preco.DefaultCellStyle = dataGridViewCellStyle4;
+            this.preco.HeaderText = "preco";
+            this.preco.Name = "preco";
+            // 
+            // carga_horaria
+            // 
+            this.carga_horaria.DataPropertyName = "carga_horaria";
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.carga_horaria.DefaultCellStyle = dataGridViewCellStyle5;
+            this.carga_horaria.HeaderText = "Carga Horaria";
+            this.carga_horaria.Name = "carga_horaria";
+            // 
             // EdicaoADM
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -284,14 +305,14 @@
         private System.Windows.Forms.Button btn_Editar;
         private System.Windows.Forms.Button btn_Cadastrar;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_curso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nome_curso;
-        private System.Windows.Forms.DataGridViewTextBoxColumn preco;
-        private System.Windows.Forms.DataGridViewTextBoxColumn carga_horaria;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btn_back;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_curso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome_curso;
+        private System.Windows.Forms.DataGridViewTextBoxColumn preco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn carga_horaria;
     }
 }
