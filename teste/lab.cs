@@ -23,6 +23,7 @@ namespace teste
         Font SmallFont = new Font("Arial", 24, FontStyle.Bold);
         Font MediumFont = new Font("Arial", 26, FontStyle.Bold | FontStyle.Underline);
 
+
         public lab()
         {
             InitializeComponent();
@@ -60,18 +61,20 @@ namespace teste
         {
             return new Panel()
             {
-                Width = 150,
-                Height = 200,
+                Width = 350,
+                Height = 450,
                 BorderStyle = BorderStyle.FixedSingle
             };
         }
+
+
 
         private static Panel HeaderPanel(string titulo)
         {
             var panel = new Panel()
             {
-                BackColor = Color.Blue,
-                Height = 30
+                BackColor = Color.RoyalBlue,
+                Height = 50
             };
             var label = new Label()
             {
