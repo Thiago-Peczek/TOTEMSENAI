@@ -127,7 +127,7 @@ namespace teste
             espacoy(lbl_op_trabalho, lbl_prof.Height);
             espacoy(label3, lbl_prof.Height+lbl_op_trabalho.Height);
             espacoy(lbl_aprender, lbl_prof.Height + lbl_op_trabalho.Height);
-            espacoy(label8, lbl_req.Height);
+            
             
             
             var qrGenerator = new QRCodeGenerator();
